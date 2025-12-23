@@ -1,0 +1,13 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "@ohos/flutter_ohos": "har/flutter.har",
+    "better_player_plus": "file:../har/better_player_plus.har",
+    "wakelock_plus_ohos": "file:../har/wakelock_plus_ohos.har"
+  }
+}

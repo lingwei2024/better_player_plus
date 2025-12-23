@@ -1,0 +1,80 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/lingwei/.ohos/config/default_ohos_uQr7jv4h6wnAYHuPX-iz894gSBulbXe_NPkxPE2hh3U=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B43800D3E116C5849816E79AEB4FFFB3ACA1CCE2D2B9AFA1BFC70596C101DB8EC69F48C1EF2BAE1",
+          "profile": "/Users/lingwei/.ohos/config/default_ohos_uQr7jv4h6wnAYHuPX-iz894gSBulbXe_NPkxPE2hh3U=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/lingwei/.ohos/config/default_ohos_uQr7jv4h6wnAYHuPX-iz894gSBulbXe_NPkxPE2hh3U=.p12",
+          "storePassword": "0000001B112B98810598D2746DD78E3A15955B560FA4FAC41BC90348A7BA467EB174A3B7960E1589B9ECE1"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "6.0.1(21)",
+        "compatibleSdkVersion": "6.0.1(21)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug"
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wakelock_plus_ohos",
+      "srcPath": "../../../.pub-cache/hosted/pub.flutter-io.cn/wakelock_plus_ohos-0.0.3/ohos",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "better_player_plus",
+      "srcPath": "../../ohos",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
